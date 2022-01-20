@@ -288,14 +288,21 @@ body {
   letter-spacing: -0.02em;
   line-height: 60px;
   padding-bottom: 24px;
+  white-space: pre-line !important;
+  font-family: inherit !important;
 }
 
 .txt-btn {
-  padding: 14px;
+  padding: 14px 24px;
   background-color: #fff;
   display: block;
   border-radius: 10px;
   width: fit-content;
+}
+
+.t3 {
+  font-size: 95px;
+  line-height: 98px;
 }
 
 /* Footer Styles  */
