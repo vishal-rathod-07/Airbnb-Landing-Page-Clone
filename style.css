@@ -264,3 +264,43 @@ body {
 .c-img-row {
   padding-bottom: 6rem;
 }
+
+/* Experiences Styles  */
+.experiences .card {
+  border: 0;
+}
+
+.txt-grp {
+  padding: 80px !important;
+}
+
+.txt-grp a {
+  color: #222;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.txt-title {
+  color: #fff;
+  font-size: 53px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 60px;
+  padding-bottom: 24px;
+}
+
+.txt-btn {
+  padding: 14px;
+  background-color: #fff;
+  display: block;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+/* Footer Styles  */
+
+.footer-navigation {
+  background-color: #f7f7f7;
+  padding: 48px 0;
+}
