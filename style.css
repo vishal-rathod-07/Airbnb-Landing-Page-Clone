@@ -29,6 +29,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a:hover {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
 .dark {
   background-color: #000;
   color: white;
@@ -318,9 +323,55 @@ body {
   letter-spacing: 0em;
 }
 
+.container {
+  min-width: 1600px !important;
+}
+
 /* Footer Styles  */
 
 .footer-navigation {
   background-color: #f7f7f7;
-  padding: 48px 0;
+  font-size: 14px;
+}
+
+.nav-first {
+  padding: 48px;
+}
+
+.nav-title {
+  color: #222;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 800;
+}
+
+.footer-navigation li {
+  list-style-type: none;
+  margin: 16px 0 0;
+}
+
+.footer-navigation li a {
+  color: #222;
+  text-decoration: none;
+  line-height: 18px;
+  outline: none;
+}
+
+.copyright-row {
+  border-top: 1px solid rgb(221, 221, 221) !important;
+  padding: 24px 0;
+}
+
+.abnb {
+  margin: 0 19px 0 0;
+}
+
+.dot {
+  display: inline-block;
+  text-align: center !important;
+  width: 19px !important;
+}
+
+.copyright-row a {
+  color: #222;
 }
