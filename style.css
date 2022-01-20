@@ -308,6 +308,10 @@ body {
   width: fit-content;
 }
 
+.txt-btn:hover {
+  background-color: #ebebeb;
+}
+
 .t3 {
   font-size: 95px;
   line-height: 98px;
