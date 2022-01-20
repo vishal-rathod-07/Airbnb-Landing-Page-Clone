@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "circular";
+  src: url(abnbfont.woff) format("woff");
+}
+
 :root {
   --header-brand-color: #ff385c;
 }
@@ -8,9 +13,20 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-    "Helvetica Neue", sans-serif;
+  font-family: "circular", -apple-system, "BlinkMacSystemFont", "Roboto",
+    "Helvetica Neue", sans-serif !important;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #484848;
+  background-color: #fff;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .dark {
@@ -18,20 +34,13 @@ body {
   color: white;
 }
 
-/* .col-lg-4 {
-  /* border: 1px solid blue; */
-/* padding: 0 80px !important; */
-/* } */
-
-/* Navbar styles  */
-
 .navbar {
   padding: 0 !important;
 }
 
 .nav {
   background-color: #fff;
-  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: rgb(0 0 0 / 8%) 0px 1px 12px !important;
 }
 
 .navbar-brand {
@@ -52,11 +61,16 @@ body {
 
 .btn-label {
   padding: 0 16px;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  font-weight: 600 !important;
+  text-overflow: ellipsis !important;
 }
 
-.search img {
+.serch-icon {
   background-color: var(--header-brand-color);
   border-radius: 50%;
+  color: white;
   padding: 5px;
   height: 32px;
   width: 32px;
@@ -72,7 +86,7 @@ body {
   border-radius: 40px;
   border: 1px solid #ddd;
   background-color: white;
-  box-shadow: 1px 2px gray;
+  box-shadow: 0px 1px 2px rgb(0 0 0 / 8%), 0px 4px 12px rgb(0 0 0 / 5%) !important;
 }
 
 .button {
@@ -81,10 +95,10 @@ body {
   border: 0;
   cursor: pointer;
   font-size: 14px;
-  /* font-weight: 600; */
+  font-weight: 600;
   line-height: 18px;
   text-decoration: none;
-  color: #000;
+  color: #222;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
     "Helvetica Neue", sans-serif;
 }
@@ -163,8 +177,7 @@ body {
 }
 
 .second {
-  padding-top: 96px;
-  padding-bottom: 48px;
+  padding: 96px 0 48px 0;
 }
 
 .subhead {
@@ -172,6 +185,19 @@ body {
   font-weight: 600;
   line-height: 47px;
   padding-bottom: 48px;
+}
+
+.card-title {
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 39px;
+}
+
+.card-text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
 }
 
 .card-1,
@@ -195,20 +221,29 @@ body {
   text-decoration: none;
 }
 
-.card-1 .card-body {
-  background-color: #d93b30;
-  color: white;
+.second.row .col-3 {
+  padding: 0 10px;
 }
-.card-2 .card-body {
+
+.card-body {
+  height: 16.2em;
+  min-height: 50%;
+}
+
+.card-1 .card-body {
   background-color: #de3151;
   color: white;
 }
-.card-3 .card-body {
+.card-2 .card-body {
   background-color: #bc1a6e;
   color: white;
 }
-.card-4 .card-body {
+.card-3 .card-body {
   background-color: #cc2d4a;
+  color: white;
+}
+.card-4 .card-body {
+  background-color: #d93b30;
   color: white;
 }
 
@@ -218,9 +253,14 @@ body {
 }
 
 .experiences {
-  padding-bottom: 48px;
+  padding: 48px 0 96px 0;
 }
 
-.img-col img {
+.experiences img {
   border-radius: 10px;
+  width: 100%;
+}
+
+.c-img-row {
+  padding-bottom: 6rem;
 }
