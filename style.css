@@ -313,12 +313,16 @@ a:hover {
 }
 
 .experiences {
-  padding: 96px !important;
+  padding: 96px 0px !important;
 }
 
 .experiences img {
   border-radius: 10px;
   width: 100%;
+}
+
+.big-img-col {
+  padding: 0 !important;
 }
 
 .c-img-row {
@@ -365,10 +369,11 @@ a:hover {
 }
 
 .txt-btn {
+  font-size: 14px;
   padding: 14px 24px;
   background-color: #fff;
   display: block;
-  border-radius: 10px;
+  border-radius: 8px;
   width: fit-content;
 }
 
@@ -415,6 +420,29 @@ a:hover {
 
 .nav-first {
   padding: 48px 0;
+  margin: 0 !important;
+}
+
+.col-headers {
+  color: #222;
+  font-size: 14px !important;
+  line-height: 18px;
+  font-weight: 800 !important;
+}
+
+.col-header {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  font-size: unset !important;
+  font-weight: unset !important;
+}
+
+.nav-col {
+  padding: 0px 12px !important;
+}
+
+.nav-col ul {
+  margin-bottom: 0 !important;
 }
 
 .nav-title {
@@ -441,6 +469,22 @@ a:hover {
   padding: 24px 0;
 }
 
+.nav-list {
+  margin: 0 0 0 -19px;
+}
+
+.nav-list a {
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-variant: inherit;
+  text-decoration: none !important;
+  color: #222;
+  font-size: 14px;
+  line-height: 18px;
+  outline: none;
+}
+
 .abnb {
   margin: 0 19px 0 0;
 }
@@ -455,8 +499,54 @@ a:hover {
   color: #222;
 }
 
-.language {
+.language,
+.currency {
   margin-right: 24px;
+}
+
+.btn-language,
+.btn-currency {
+  border: 0px !important;
+  background: transparent !important;
+  cursor: pointer !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  text-decoration: none !important;
+}
+
+.world-logo,
+.rupee-logo {
+  margin-right: 8px;
+}
+
+.bold-ul {
+  font-weight: 600 !important;
+  text-decoration: underline !important;
+}
+
+.social-icons {
+  margin-left: 32px !important;
+}
+
+.social-icons ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons ul li {
+  padding: 0;
+}
+
+.facebook,
+.twitter {
+  margin: 0 24px 0 0 !important;
+}
+
+.instagram {
+  margin: 0 !important;
 }
 
 /* Media Queries  */
@@ -473,5 +563,39 @@ a:hover {
 
   .second .card-body {
     height: 298.66px;
+  }
+}
+
+@media (min-width: 1128px) {
+  .nav-column {
+    flex: 1 0 0% !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .footer-nav-list {
+    display: block !important;
+    margin: 0 !important;
+  }
+}
+
+@media (max-width: 2071px) {
+  .nav-container {
+    max-width: 1760px !important;
+    padding: 0 80px !important;
+  }
+
+  .cont {
+    max-width: 1600px !important;
+  }
+
+  .card-body {
+    height: 245.33px;
+  }
+}
+
+@media (max-width: 1760px) {
+  .cont {
+    margin: 0 80px !important;
   }
 }
