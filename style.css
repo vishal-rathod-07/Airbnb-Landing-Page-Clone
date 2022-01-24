@@ -44,6 +44,9 @@
 
 :root {
   --header-brand-color: #ff385c;
+  --mls-grid-col-xs: 2;
+  --mls-grid-col-md: 4;
+  --mls-grid-col-lg: 4;
 }
 
 * {
@@ -224,7 +227,7 @@ a:hover {
   line-height: 28px;
   padding: 14px 32px;
   border-radius: 40px;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .flx-btn-text {
@@ -245,6 +248,12 @@ a:hover {
   line-height: 47px;
   padding-bottom: 48px;
   margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.city-cards {
+  display: grid !important;
+  grid-template-rows: auto !important;
 }
 
 .card-title {
@@ -310,6 +319,10 @@ a:hover {
 .card img {
   /* position: relative; */
   width: 100%;
+}
+
+.card-img-top {
+  border-radius: 12px;
 }
 
 .experiences {
@@ -565,18 +578,42 @@ a:hover {
     height: 298.66px;
   }
 }
-
+@media (min-width: 1600px) {
+}
+@media (min-width: 1440px) {
+}
 @media (min-width: 1128px) {
   .nav-column {
     flex: 1 0 0% !important;
-    padding-left: 12px !important;
     padding-right: 12px !important;
+  }
+
+  .city-cards {
+    grid-template-columns: repeat(
+      var(--mls-grid-col-lg, 4),
+      minmax(0, 1fr)
+    ) !important;
+    column-gap: var(--mls-grid-vgap-lg, 24px) !important;
+    row-gap: var(--mls-grid-hgap-lg, 24px) !important;
   }
 
   .footer-nav-list {
     display: block !important;
     margin: 0 !important;
   }
+}
+@media (min-width: 650px) {
+}
+@media (min-width: 744px) {
+}
+@media (min-width: 375px) {
+}
+
+@media (min-width: 1128px) and (max-width: 1439px) {
+}
+@media (min-width: 744px) and (max-width: 1127px) {
+}
+@media (min-width: 375px) and (max-width: 743px) {
 }
 
 @media (max-width: 2071px) {
@@ -593,9 +630,10 @@ a:hover {
     height: 245.33px;
   }
 }
-
 @media (max-width: 1760px) {
   .cont {
     margin: 0 80px !important;
   }
+}
+@media (max-width: 374px) {
 }
