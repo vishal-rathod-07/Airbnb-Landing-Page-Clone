@@ -118,6 +118,7 @@ a:hover {
   padding: 5px;
   height: 32px;
   width: 32px;
+  margin: 7px 7px 7px 0;
 }
 
 .search-btn {
@@ -126,7 +127,7 @@ a:hover {
   font-weight: 400;
   height: 48px;
   line-height: 20px;
-  padding: 0 8px;
+  padding: 0 0 0 8px;
   border-radius: 40px;
   border: 1px solid #ddd;
   background-color: white;
@@ -166,6 +167,7 @@ a:hover {
   border: 1px solid #dddddd;
   border-radius: 21px;
   background-color: #fff;
+  position: relative;
 }
 
 .user-button:hover {
@@ -178,10 +180,22 @@ a:hover {
   margin-left: 12px;
 }
 
+.notification-dot {
+  background-color: var(--header-brand-color);
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  height: 10px;
+  min-width: 10px;
+  right: 4px;
+  top: 2px;
+  box-shadow: white 0px 0px 0px 1.5px;
+}
+
 /* Image section styles  */
 
 .first {
-  padding-top: 80px;
+  padding-top: 76px;
   padding-bottom: 96px;
 }
 
@@ -189,8 +203,12 @@ a:hover {
   border: 0;
 }
 
+.first .container .card-img-overlay {
+  padding: 0 0 72px 0;
+}
+
 .first .container {
-  padding: 0 0 72px;
+  padding: 0;
 }
 
 .image-container {
@@ -218,20 +236,24 @@ a:hover {
   padding-bottom: 24px;
   color: #fff;
   font-family: inherit;
+  margin: 0;
+  letter-spacing: -0.02em;
 }
 
 .btn-flexible {
   background-color: #fff;
-  margin-top: 16px;
   font-size: 18px;
   line-height: 28px;
   padding: 14px 32px;
-  border-radius: 40px;
+  border-radius: 1000px;
   font-weight: 800;
 }
 
 .flx-btn-text {
-  color: #6f019c;
+  background: -webkit-linear-gradient(0deg, #6f019c 0%, #c6017e 135.12%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0 2px 0 2px;
 }
 
 .btn-flexible:hover {
@@ -330,7 +352,7 @@ a:hover {
 }
 
 .experiences img {
-  border-radius: 10px;
+  border-radius: 12px;
   width: 100%;
 }
 
