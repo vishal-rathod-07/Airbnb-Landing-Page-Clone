@@ -707,6 +707,9 @@ a:hover {
   }
 }
 @media (min-width: 650px) {
+  .cont {
+    max-width: 650px !important;
+  }
 }
 @media (min-width: 950px) {
   .nav-container {
@@ -726,6 +729,10 @@ a:hover {
   }
 }
 @media (min-width: 1128px) {
+  .cont {
+    max-width: 968px;
+  }
+
   .nav-container {
     padding: 0 80px !important;
   }
@@ -752,6 +759,12 @@ a:hover {
   .footer-nav-list {
     display: block !important;
     margin: 0 !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cont {
+    max-width: 1040px;
   }
 }
 
