@@ -759,9 +759,6 @@ a:hover {
   }
 }
 
-@media (min-width: 1200px) {
-}
-
 @media (min-width: 1440px) {
   .nav-container {
     padding: 0 80px !important;
@@ -779,8 +776,7 @@ a:hover {
   .cont {
     max-width: 1600px !important;
   }
-}
-@media (min-width: 1760px) {
+
   .card-body {
     height: 254.66px !important;
   }
@@ -924,8 +920,4 @@ a:hover {
     line-height: 24px;
     padding: 12px 24px;
   }
-}
-
-/* Extra in Max Width  */
-@media (max-width: 1760px) {
 }
