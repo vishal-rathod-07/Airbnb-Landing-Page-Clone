@@ -285,11 +285,11 @@ a:hover {
   border: 0;
 }
 
-.first .container .card-img-overlay {
+.first .cont .card-img-overlay {
   padding: 0 0 72px 0;
 }
 
-.first .container {
+.first .cont {
   padding: 0;
 }
 
@@ -707,9 +707,6 @@ a:hover {
   }
 }
 @media (min-width: 650px) {
-  .cont {
-    max-width: 650px !important;
-  }
 }
 @media (min-width: 950px) {
   .nav-container {
@@ -730,7 +727,7 @@ a:hover {
 }
 @media (min-width: 1128px) {
   .cont {
-    max-width: 968px;
+    margin: 0 80px !important;
   }
 
   .nav-container {
@@ -763,16 +760,9 @@ a:hover {
 }
 
 @media (min-width: 1200px) {
-  .cont {
-    max-width: 1040px;
-  }
 }
 
 @media (min-width: 1440px) {
-  .cont {
-    max-width: 1440px !important;
-  }
-
   .nav-container {
     padding: 0 80px !important;
   }
@@ -791,10 +781,6 @@ a:hover {
   }
 }
 @media (min-width: 1760px) {
-  .cont {
-    max-width: 1600px !important;
-  }
-
   .card-body {
     height: 254.66px !important;
   }
@@ -942,7 +928,4 @@ a:hover {
 
 /* Extra in Max Width  */
 @media (max-width: 1760px) {
-  .cont {
-    margin: 0 80px !important;
-  }
 }
