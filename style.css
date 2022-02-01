@@ -661,6 +661,7 @@ a:hover {
 .copyright-row {
   border-top: 1px solid rgb(221, 221, 221) !important;
   padding: 24px 0;
+  line-height: 20px;
 }
 
 .nav-list {
