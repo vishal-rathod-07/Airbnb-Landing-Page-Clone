@@ -79,7 +79,7 @@ a:hover {
 }
 
 .dark {
-  background-color: #000;
+  background-color: #000 !important;
   color: white;
 }
 
@@ -321,6 +321,7 @@ a:hover {
   font-family: inherit;
   margin: 0;
   letter-spacing: -0.02em;
+  white-space: pre-line !important;
 }
 
 .btn-flexible {
@@ -486,11 +487,18 @@ a:hover {
 /* Experiences Section Styles  */
 
 .experiences {
-  padding: 96px 0px !important;
+  padding: 96px 0px 48px !important;
+}
+
+.exp-cards .txt-title {
+  padding-bottom: 24px;
+  margin: 0;
+  white-space: pre-line !important;
+  font-family: inherit !important;
 }
 
 .experiences img {
-  border-radius: 12px;
+  border-radius: 12px !important;
   width: 100%;
 }
 
@@ -507,6 +515,10 @@ a:hover {
   grid-template-rows: auto;
   grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
   row-gap: 16px !important;
+}
+
+.exp-r-three .txt-grp {
+  padding: 80px;
 }
 
 /* Experiences Styles  */
@@ -527,27 +539,11 @@ a:hover {
   padding-left: 12px !important;
 }
 
-.txt-grp {
-  padding: 80px !important;
-}
-
 .txt-grp a {
   color: #222;
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
-}
-
-.txt-title {
-  color: #fff;
-  font-size: 53px;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  line-height: 60px;
-  padding-bottom: 24px;
-  margin: 0;
-  white-space: pre-line !important;
-  font-family: inherit !important;
 }
 
 .txt-btn {
@@ -569,6 +565,10 @@ a:hover {
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 98px;
+  font-family: inherit;
+  white-space: pre-line !important;
+  margin: 0;
+  overflow: visible;
 }
 
 /* Footer Styles  */
@@ -776,6 +776,47 @@ a:hover {
     font-weight: 400;
     line-height: 20px;
   }
+
+  .exp-cards .txt-grp {
+    padding: 32px !important;
+  }
+
+  .exp-cards .txt-title {
+    color: #fff;
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 38px;
+  }
+
+  .exp-r-two {
+    padding: 0 0 24px 0 !important;
+  }
+
+  .c-img-col {
+    max-width: 100% !important;
+  }
+
+  .c-img-col .card,
+  .c-img-col img {
+    border-radius: 0 !important;
+  }
+
+  .c-img-col .t3 {
+    color: #fff;
+    font-size: 43px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 45px;
+  }
+
+  .exp-r-three .txt-grp {
+    padding: 32px 24px;
+  }
+
+  .experiences {
+    padding-bottom: 32px !important;
+  }
 }
 @media (min-width: 744px) {
   .navbar .container {
@@ -816,6 +857,26 @@ a:hover {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
     column-gap: 16px !important;
   }
+
+  .exp-r-two {
+    padding: 0 0 64px 0 !important;
+  }
+
+  .c-img-col .t3 {
+    color: #fff;
+    font-size: 49px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 51px;
+  }
+
+  .exp-r-three .txt-grp {
+    padding: 40px;
+  }
+
+  .experiences {
+    padding-bottom: 40px !important;
+  }
 }
 @media (min-width: 650px) {
 }
@@ -834,10 +895,6 @@ a:hover {
 
   .right-navbar {
     flex: 1 0 140px !important;
-  }
-
-  .cont-second {
-    margin: 0 40px !important;
   }
 
   .second-nav {
@@ -865,10 +922,6 @@ a:hover {
   .nav-column {
     flex: 1 0 0% !important;
     padding: 0 12px;
-  }
-
-  .cont-second {
-    margin: 0 80px !important;
   }
 
   .subhead {
@@ -901,9 +954,41 @@ a:hover {
     column-gap: 24px !important;
   }
 
+  .exp-cards .txt-grp {
+    padding: 40px !important;
+  }
+
+  .exp-cards .txt-title {
+    color: #fff;
+    font-size: 41px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 46px;
+  }
+
+  .exp-r-two {
+    padding: 0 0 96px 0 !important;
+  }
+
   .footer-nav-list {
     display: block !important;
     margin: 0 !important;
+  }
+
+  .c-img-col .t3 {
+    color: #fff;
+    font-size: 74px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 77px;
+  }
+
+  .exp-r-three .txt-grp {
+    padding: 80px;
+  }
+
+  .experiences {
+    padding-bottom: 48px !important;
   }
 }
 
@@ -953,6 +1038,38 @@ a:hover {
   .experiences .cont {
     max-width: calc(min(1760px, 100%) - 160px) !important;
   }
+
+  .exp-cards .txt-grp {
+    padding: 80px !important;
+  }
+
+  .exp-cards .txt-title {
+    color: #fff;
+    font-size: 53px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 60px;
+  }
+
+  .c-img-col {
+    max-width: calc(min(1760px, 100%) - 160px) !important;
+  }
+
+  .c-img-col img {
+    border-radius: 12px !important;
+  }
+
+  .c-img-col .t3 {
+    color: #fff;
+    font-size: 95px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 98px;
+  }
+
+  .footer-navigation {
+    margin-top: 48px;
+  }
 }
 @media (min-width: 1600px) {
 }
@@ -966,6 +1083,10 @@ a:hover {
   }
 
   .experiences .cont {
+    max-width: 1920px !important;
+  }
+
+  .c-img-col {
     max-width: 1920px !important;
   }
 
@@ -990,6 +1111,7 @@ a:hover {
     font-weight: 600;
     letter-spacing: -0.02em;
     line-height: 32px;
+    text-align: center;
   }
 
   .container.cont {
@@ -1046,6 +1168,10 @@ a:hover {
   .cont-second {
     max-width: calc(100% - 80px) !important;
   }
+
+  .exp-cards .txt-grp {
+    padding: 24px !important;
+  }
 }
 @media (min-width: 1128px) and (max-width: 1439px) {
   .first .cont {
@@ -1092,6 +1218,15 @@ a:hover {
 
   .navbar .container-small {
     display: block !important;
+  }
+
+  .first .cont .card-img-overlay {
+    padding: 0;
+  }
+
+  .first.row.dark {
+    padding-top: 0px;
+    padding-bottom: 40px;
   }
 
   .first .Heading {
@@ -1144,5 +1279,33 @@ a:hover {
     font-size: 15px;
     font-weight: 400;
     line-height: 20px;
+  }
+
+  .exp-cards .txt-title {
+    color: #fff;
+    font-size: 27px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 30px;
+  }
+
+  .exp-r-two {
+    padding: 0 0 24px 0 !important;
+  }
+
+  .c-img-col .t3 {
+    color: #fff;
+    font-size: 39px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 41px;
+  }
+
+  .exp-r-three .txt-grp {
+    padding: 32px 24px;
+  }
+
+  .experiences {
+    padding-bottom: 32px !important;
   }
 }
