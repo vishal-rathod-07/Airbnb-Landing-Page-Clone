@@ -372,10 +372,6 @@ a:hover {
   border-radius: 0;
 } */
 
-.s-first-row {
-  padding-bottom: 48px;
-}
-
 .subhead {
   font-size: 42px;
   font-weight: 600;
@@ -487,6 +483,8 @@ a:hover {
   border-radius: 12px;
 }
 
+/* Experiences Section Styles  */
+
 .experiences {
   padding: 96px 0px !important;
 }
@@ -504,11 +502,14 @@ a:hover {
   padding-bottom: 6rem;
 }
 
-/* Experiences Styles  */
-
-.experiences .subhead {
-  padding-bottom: 48px;
+.exp-cards {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  row-gap: 16px !important;
 }
+
+/* Experiences Styles  */
 
 .experiences .card {
   border: 0;
@@ -563,9 +564,11 @@ a:hover {
 }
 
 .t3 {
+  color: #fff;
   font-size: 95px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
   line-height: 98px;
-  letter-spacing: 0em;
 }
 
 /* Footer Styles  */
@@ -602,6 +605,15 @@ a:hover {
 .nav-first {
   padding: 48px 0;
   margin: 0 -12px !important;
+  line-height: 20px;
+}
+
+.c-first {
+  padding-left: 0 !important;
+}
+
+.c-last {
+  padding-right: 0 !important;
 }
 
 .col-headers {
@@ -616,6 +628,7 @@ a:hover {
   margin-bottom: 0px !important;
   font-size: unset !important;
   font-weight: unset !important;
+  line-height: 18px;
 }
 
 .nav-col {
@@ -741,6 +754,28 @@ a:hover {
   .navbar .container-small {
     display: block;
   }
+
+  .subhead {
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 28px;
+  }
+
+  .cont-second .card-title {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 23px;
+  }
+
+  .cont-second .card-text {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+  }
 }
 @media (min-width: 744px) {
   .navbar .container {
@@ -751,6 +786,18 @@ a:hover {
     padding: 0 40px !important;
   }
 
+  .s-first-row {
+    padding-bottom: 24px;
+  }
+
+  .cont-second .card-title {
+    color: #fff;
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 26px;
+  }
+
   .second-nav {
     display: block;
   }
@@ -759,6 +806,15 @@ a:hover {
     grid-template-columns: repeat(var(--grid-col-md, 3), minmax(0, 1fr));
     column-gap: 16px;
     row-gap: 16px;
+  }
+
+  .experiences .cont {
+    max-width: calc(min(1760px, 100%) - 80px) !important;
+  }
+
+  .exp-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    column-gap: 16px !important;
   }
 }
 @media (min-width: 650px) {
@@ -808,7 +864,7 @@ a:hover {
 
   .nav-column {
     flex: 1 0 0% !important;
-    padding: 0 12px !important;
+    padding: 0 12px;
   }
 
   .cont-second {
@@ -817,11 +873,20 @@ a:hover {
 
   .subhead {
     font-size: 33px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
     line-height: 37px;
   }
 
+  .s-first-row {
+    padding-bottom: 48px;
+  }
+
   .cont-second .card-title {
+    color: #fff;
     font-size: 27px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
     line-height: 30px;
   }
 
@@ -829,6 +894,11 @@ a:hover {
     grid-template-columns: repeat(var(--grid-col-lg, 4), minmax(0, 1fr));
     column-gap: 24px;
     row-gap: 24px;
+  }
+
+  .exp-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    column-gap: 24px !important;
   }
 
   .footer-nav-list {
@@ -861,26 +931,30 @@ a:hover {
     line-height: 47px;
   }
 
+  .cont-second {
+    max-width: calc(min(1760px, 100%) - 160px) !important;
+  }
+
   .cont-second .card-title {
+    color: #fff;
     font-size: 35px;
     font-weight: 600;
     letter-spacing: -0.01em;
     line-height: 39px;
   }
-}
-@media (min-width: 1600px) {
-  .cont-second {
-    max-width: 1600px !important;
-    margin: auto !important;
+
+  .cont-second .card-text {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
   }
 
   .experiences .cont {
-    max-width: 1600px !important;
+    max-width: calc(min(1760px, 100%) - 160px) !important;
   }
-
-  /* .card-body {
-    height: 254.66px !important;
-  } */
+}
+@media (min-width: 1600px) {
 }
 @media (min-width: 2080px) {
   .first .cont {
@@ -935,6 +1009,10 @@ a:hover {
     line-height: 24px;
     padding: 12px 24px;
   }
+
+  .s-first-row {
+    padding-bottom: 32px;
+  }
 }
 @media (min-width: 744px) and (max-width: 1127px) {
   .first .Heading {
@@ -945,11 +1023,11 @@ a:hover {
     line-height: 36px;
   }
 
-  .container.cont {
+  /* .container.cont {
     margin: 0 !important;
     width: 100% !important;
     max-width: 100% !important;
-  }
+  } */
 
   .first {
     padding: 0;
@@ -963,6 +1041,10 @@ a:hover {
     font-size: 15px;
     line-height: 24px;
     padding: 12px 24px;
+  }
+
+  .cont-second {
+    max-width: calc(100% - 80px) !important;
   }
 }
 @media (min-width: 1128px) and (max-width: 1439px) {
@@ -995,6 +1077,10 @@ a:hover {
     font-size: 18px;
     line-height: 28px;
     padding: 14px 32px;
+  }
+
+  .cont-second {
+    max-width: calc(min(1760px, 100%) - 160px) !important;
   }
 }
 
@@ -1036,6 +1122,27 @@ a:hover {
 
   .subhead {
     font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
     line-height: 25px;
+  }
+
+  .s-first-row {
+    padding-bottom: 32px;
+  }
+
+  .cont-second .card-title {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 20px;
+  }
+
+  .cont-second .card-text {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
   }
 }
