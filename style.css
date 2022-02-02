@@ -371,6 +371,9 @@ a:hover {
   line-height: 47px;
   margin: 0;
   letter-spacing: -0.02em;
+  font-family: inherit;
+  overflow: visible;
+  white-space: inherit;
 }
 
 .second-nav {
@@ -752,6 +755,11 @@ a:hover {
     font-weight: 600;
     letter-spacing: -0.02em;
     line-height: 28px;
+    max-width: 70%;
+  }
+
+  .cont-second {
+    max-width: calc(100% - 48px) !important;
   }
 
   .cont-second .card-title {
@@ -881,6 +889,11 @@ a:hover {
 
   .second-nav {
     display: block;
+  }
+
+  .first .Heading,
+  .subhead {
+    white-space: inherit !important;
   }
 
   .first.row.dark {
@@ -1251,6 +1264,10 @@ a:hover {
     margin: 0 !important;
   }
 
+  .subhead {
+    white-space: pre-line;
+  }
+
   .first {
     padding: 0;
   }
@@ -1267,6 +1284,11 @@ a:hover {
 
   .s-first-row {
     padding-bottom: 32px;
+  }
+
+  .experiences .cont {
+    max-width: calc(100% - 48px);
+    margin: auto !important;
   }
 }
 @media (min-width: 744px) and (max-width: 1127px) {
@@ -1362,6 +1384,7 @@ a:hover {
     font-weight: 600;
     letter-spacing: -0.02em;
     line-height: 27px;
+    text-align: center;
   }
 
   .first .cont .card-img-overlay {
@@ -1391,10 +1414,19 @@ a:hover {
     font-weight: 600;
     letter-spacing: -0.02em;
     line-height: 25px;
+    white-space: pre-line;
   }
 
   .s-first-row {
     padding-bottom: 32px;
+  }
+
+  .second {
+    padding: 48px 0 0 0;
+  }
+
+  .cont-second {
+    max-width: calc(100% - 48px) !important;
   }
 
   .cont-second .card-title {
@@ -1412,6 +1444,15 @@ a:hover {
     line-height: 20px;
   }
 
+  .experiences {
+    padding: 48px 0 32px 0 !important;
+  }
+
+  .experiences .cont {
+    max-width: calc(100% - 48px);
+    margin: auto !important;
+  }
+
   .exp-cards .txt-title {
     color: #fff;
     font-size: 27px;
@@ -1422,6 +1463,11 @@ a:hover {
 
   .exp-r-two {
     padding: 0 0 24px 0 !important;
+  }
+
+  .c-img-col .card,
+  .c-img-col img {
+    border-radius: 0 !important;
   }
 
   .c-img-col .t3 {
@@ -1440,7 +1486,51 @@ a:hover {
     padding-bottom: 32px !important;
   }
 
+  .e-card .txt-grp {
+    padding: 24px;
+  }
+
+  .footer-navigation {
+    border-top: 1px solid #ddd;
+  }
+
   .footer-container {
     padding: 0 24px !important;
+  }
+
+  .footer-navigation li {
+    margin: 12px 0 0;
+  }
+
+  .nav-first {
+    flex-direction: column;
+    padding: 32px 0 16px 0;
+  }
+
+  .nav-column:not(:last-child) {
+    padding-bottom: 8px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .f-row {
+    flex-direction: column-reverse;
+  }
+
+  .social-icons {
+    display: none;
+  }
+
+  .first-col-copy {
+    flex-direction: column;
+  }
+
+  .dot:first-child {
+    /* opacity: 0; */
+    display: none;
+  }
+
+  .second-col-copy {
+    margin: 0 0 16px 0;
   }
 }
