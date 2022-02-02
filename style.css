@@ -895,6 +895,9 @@ a:hover {
     padding: 64px 0 0 0;
   }
 
+  .experiences {
+    padding-top: 64px !important;
+  }
   .second-nav {
     display: block;
   }
@@ -1069,6 +1072,14 @@ a:hover {
 
   .s-first-row {
     padding-bottom: 48px;
+  }
+
+  .second {
+    padding: 96px 0 0 0;
+  }
+
+  .experiences {
+    padding-top: 96px !important;
   }
 
   .cont-second .card-title {
@@ -1406,6 +1417,10 @@ a:hover {
   }
 
   .cont-second {
+    max-width: calc(min(1760px, 100%) - 160px) !important;
+  }
+
+  .experiences .cont {
     max-width: calc(min(1760px, 100%) - 160px) !important;
   }
 }
