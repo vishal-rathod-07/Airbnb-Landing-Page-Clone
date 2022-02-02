@@ -891,6 +891,10 @@ a:hover {
     line-height: 26px;
   }
 
+  .second {
+    padding: 64px 0 0 0;
+  }
+
   .second-nav {
     display: block;
   }
