@@ -97,7 +97,7 @@ a:hover {
 
 .nav {
   background-color: #fff;
-  box-shadow: rgb(0 0 0 / 8%) 0px 1px 12px !important;
+  box-shadow: rgb(0 0 0 / 8%) 0px 1px 0px !important;
 }
 
 .left-navbar {
@@ -374,6 +374,7 @@ a:hover {
   font-family: inherit;
   overflow: visible;
   white-space: inherit;
+  color: #222 !important;
 }
 
 .second-nav {
@@ -410,6 +411,7 @@ a:hover {
   font-weight: 600;
   letter-spacing: -0.01em;
   line-height: 39px;
+  margin-bottom: 8px !important;
 }
 
 .card-text {
@@ -454,11 +456,11 @@ a:hover {
 } */
 
 .card-1 .card-body {
-  background-color: #de3151;
+  background-color: #d93b30;
   color: white;
 }
 .card-2 .card-body {
-  background-color: #bc1a6e;
+  background-color: #de3151;
   color: white;
 }
 .card-3 .card-body {
@@ -466,7 +468,7 @@ a:hover {
   color: white;
 }
 .card-4 .card-body {
-  background-color: #d93b30;
+  background-color: #bc1a6e;
   color: white;
 }
 
@@ -871,6 +873,9 @@ a:hover {
   }
 }
 @media (min-width: 744px) {
+  .nav {
+    box-shadow: rgb(0 0 0 / 8%) 0px 1px 12px !important;
+  }
   .navbar .container {
     display: block;
   }
