@@ -272,23 +272,14 @@ a:hover {
   color: #222;
 }
 
-.container-fluid.main {
+/* .container-fluid.main {
   margin-top: 80px;
-}
+} */
 
 /* First  */
 
-.first.row.dark {
-  padding-top: calc(176px - 80px);
-  padding-bottom: 96px;
-}
-
 .first .card {
   border: 0;
-}
-
-.first .cont .card-img-overlay {
-  padding: 0 0 72px 0;
 }
 
 .first .cont {
@@ -752,6 +743,10 @@ a:hover {
     display: block;
   }
 
+  .first .cont .card-img-overlay {
+    padding: 0 0 48px 0;
+  }
+
   .subhead {
     font-size: 25px;
     font-weight: 600;
@@ -888,6 +883,15 @@ a:hover {
     display: block;
   }
 
+  .first.row.dark {
+    padding-top: 230px;
+    padding-bottom: 0px;
+  }
+
+  .first .cont .card-img-overlay {
+    padding: 0 0 64px 0;
+  }
+
   .city-cards {
     grid-template-columns: repeat(var(--grid-col-md, 3), minmax(0, 1fr));
     column-gap: 16px;
@@ -981,6 +985,11 @@ a:hover {
     display: none;
   }
 
+  .first.row.dark {
+    padding-top: 176px;
+    padding-bottom: 0px;
+  }
+
   .subhead {
     font-size: 25px;
     line-height: 28px;
@@ -1002,6 +1011,11 @@ a:hover {
   .nav-column {
     flex: 1 0 0% !important;
     padding: 0 12px;
+  }
+
+  .first.row.dark {
+    padding-top: 176px;
+    padding-bottom: 96px;
   }
 
   .subhead {
@@ -1122,6 +1136,10 @@ a:hover {
     font-weight: 600;
     letter-spacing: -0.02em;
     line-height: 54px;
+  }
+
+  .first .cont .card-img-overlay {
+    padding: 0 0 72px 0;
   }
 
   .subhead {
@@ -1301,11 +1319,6 @@ a:hover {
     line-height: 43px;
   }
 
-  .container-fluid.cont {
-    margin: auto;
-    padding-bottom: 96px;
-  }
-
   .first {
     padding: 0;
   }
@@ -1341,7 +1354,6 @@ a:hover {
 
   .first.row.dark {
     padding-top: 0px;
-    padding-bottom: 40px;
   }
 
   .first .Heading {
@@ -1350,6 +1362,10 @@ a:hover {
     font-weight: 600;
     letter-spacing: -0.02em;
     line-height: 27px;
+  }
+
+  .first .cont .card-img-overlay {
+    padding: 0 0 40px 0;
   }
 
   .container.cont {
