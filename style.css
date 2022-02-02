@@ -909,6 +909,12 @@ a:hover {
     padding: 0 0 64px 0;
   }
 
+  /* .c-f-small {
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    margin: 0 !important;
+  } */
+
   .city-cards {
     grid-template-columns: repeat(var(--grid-col-md, 3), minmax(0, 1fr));
     column-gap: 16px;
@@ -1267,6 +1273,10 @@ a:hover {
 
 /* Min-Width - Max-Width */
 @media (min-width: 375px) and (max-width: 743px) {
+  .first .card-img-top {
+    border-radius: 0px;
+  }
+
   .navbar .container {
     display: none !important;
   }
@@ -1320,6 +1330,10 @@ a:hover {
   }
 }
 @media (min-width: 744px) and (max-width: 1127px) {
+  .first .card-img-top {
+    border-radius: 0px;
+  }
+
   .first .Heading {
     color: #fff;
     font-size: 32px;
@@ -1394,6 +1408,10 @@ a:hover {
 
 /* Max Width  */
 @media (max-width: 374px) {
+  .first .card-img-top {
+    border-radius: 0px;
+  }
+
   .navbar .container {
     display: none !important;
   }
