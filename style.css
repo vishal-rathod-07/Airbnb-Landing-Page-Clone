@@ -845,6 +845,7 @@ a:hover {
   border-top: 1px solid rgb(235, 235, 235);
   background: rgb(255, 255, 255);
   transition: bottom 0.1s;
+  display: none !important;
 }
 
 .b-nav-container {
@@ -1530,6 +1531,10 @@ a:hover {
   .dot:first-child {
     display: none;
   }
+
+  .bottom-nav {
+    display: flex !important;
+  }
 }
 @media (min-width: 744px) and (max-width: 1127px) {
   .first .card-img-top {
@@ -1791,5 +1796,9 @@ a:hover {
 
   .second-col-copy {
     margin: 0 0 16px 0;
+  }
+
+  .bottom-nav {
+    display: flex !important;
   }
 }
