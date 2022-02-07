@@ -78,6 +78,10 @@ a:hover {
   color: inherit !important;
 }
 
+button:focus {
+  outline: none !important;
+}
+
 .dark {
   background-color: #000 !important;
   color: white;
@@ -465,7 +469,7 @@ a:hover {
 
 .card-inner-grid::before {
   content: "" !important;
-  padding-top: 66.6667% !important;
+  padding-top: 66.5667% !important;
   grid-area: 1 / 1 / 1 / 1 !important;
   min-width: 0px !important;
 }
