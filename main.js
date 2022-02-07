@@ -3,13 +3,27 @@ const cardScrollView = document.getElementById("city-scroll-cards");
 const btnPrevious = document.getElementById("btn-previous");
 const btnNext = document.getElementById("btn-next");
 
-btnNext.onclick = function () {
-  cardScrollView.scrollLeft += 150;
-};
+// btnNext.onclick = function () {
+//   cardScrollView.scrollLeft += 150;
+// };
 
-btnPrevious.onclick = function () {
-  cardScrollView.scrollLeft -= 150;
-};
+// btnPrevious.onclick = function () {
+//   cardScrollView.scrollLeft -= 150;
+// };
+
+btnNext.addEventListener("click", () => {
+  cardScrollView.scrollBy({
+    left: 200,
+    behavior: "smooth",
+  });
+});
+
+btnPrevious.addEventListener("click", () => {
+  cardScrollView.scrollBy({
+    left: -200,
+    behavior: "smooth",
+  });
+});
 
 cardScrollView.addEventListener("scroll", function () {
   if (cardScrollView.scrollLeft === 0) {

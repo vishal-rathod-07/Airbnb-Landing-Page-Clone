@@ -388,7 +388,7 @@ a:hover {
   height: 32px;
 }
 
-.btn-previous,
+.btn-previous:disabled,
 .btn-next:disabled {
   opacity: 0.5;
   cursor: not-allowed;
@@ -408,7 +408,6 @@ a:hover {
   overflow-x: auto !important;
   padding: 4px 0 4px 0;
   scroll-padding: 8px;
-  scroll-behavior: smooth;
 }
 
 .city-scroll-cards::-webkit-scrollbar {
