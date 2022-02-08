@@ -115,6 +115,10 @@ button:focus {
   padding: 0 !important;
 }
 
+.navbar-brand-logo:hover {
+  color: var(--header-brand-color) !important;
+}
+
 .full-svg {
   display: none;
 }
@@ -166,6 +170,10 @@ button:focus {
 
 .right-navbar {
   flex: 1 0 auto !important;
+}
+
+._3hmsj {
+  color: #222;
 }
 
 .profile {
@@ -507,6 +515,7 @@ button:focus {
   grid-template-columns: 1fr !important;
   grid-template-rows: 1fr !important;
   grid-auto-rows: auto 1fr !important;
+  padding: 16px !important;
 }
 /* Card Styles End */
 
@@ -515,8 +524,11 @@ button:focus {
   font-weight: 600;
   letter-spacing: -0.01em;
   line-height: 39px;
-  margin-bottom: 8px !important;
   color: white;
+}
+
+.card-inner-text:first-child {
+  padding-bottom: 8px !important;
 }
 
 .card-text {
@@ -959,6 +971,10 @@ button:focus {
     font-weight: 600;
     letter-spacing: -0.02em;
     line-height: 38px;
+  }
+
+  .main-child-wrapper {
+    padding: 20px 16px 16px !important;
   }
 
   .exp-r-two {
@@ -1432,6 +1448,14 @@ button:focus {
     font-weight: 600;
     letter-spacing: -0.02em;
     line-height: 60px;
+  }
+
+  .main-child-wrapper {
+    padding: 24px 16px 16px !important;
+  }
+
+  .card-inner-text:first-child {
+    padding-bottom: 12px !important;
   }
 
   .c-img-col {
