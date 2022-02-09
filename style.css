@@ -1098,6 +1098,11 @@ button:focus {
     padding: 0 0 64px 0;
   }
 
+  .first .card-img-top {
+    height: 550px;
+    object-fit: cover;
+  }
+
   /* .c-f-small {
     overflow-x: scroll;
     scroll-snap-type: x proximity;
@@ -1270,6 +1275,11 @@ button:focus {
   .first.row.dark {
     padding-top: 176px;
     padding-bottom: 96px;
+  }
+
+  .first .card-img-top {
+    height: auto;
+    object-fit: cover;
   }
 
   .subhead {
