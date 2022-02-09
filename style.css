@@ -1054,7 +1054,7 @@ button:focus {
     box-shadow: rgb(0 0 0 / 8%) 0px 1px 12px !important;
   }
   .navbar .container {
-    display: block;
+    display: flex !important;
   }
 
   .nav-container {
