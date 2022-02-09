@@ -1166,6 +1166,7 @@ button:focus {
   }
 
   .nav-first {
+    display: block !important;
     flex-direction: column;
     padding: 40px 0 40px 0;
   }
@@ -1352,6 +1353,7 @@ button:focus {
   }
 
   .nav-first {
+    display: flex !important;
     flex-direction: row;
   }
 
